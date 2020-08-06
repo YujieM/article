@@ -1,4 +1,3 @@
-Table of Content
 [TOC]
 ## Heading
 Atx-style headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:
