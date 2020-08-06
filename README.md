@@ -1,2 +1,2 @@
 # Article List
-[Markdown语法] (./markdown.md)
+[Markdown语法](./markdown.md)
