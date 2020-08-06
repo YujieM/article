@@ -84,6 +84,7 @@ output:
 由于markdown编辑器的不同,可能在一行字后面，直接换行回车，也能实现换行，但是在Visual Studio Code上，想要换行必须得在一行字后面空两个格子才行。
 
 ## Code
+### Multi-line code
 Use six `s to contain code.   
 input：
 ```
@@ -103,6 +104,13 @@ int main(void)
 printf("Hello world\n");
 }
 ```
+### Single-line code
+input:
+```
+`create database hero;`
+```
+output:  
+`create database hero;`
 
 ## Task List
 ```
@@ -113,11 +121,16 @@ printf("Hello world\n");
 ```
 
 ## Link
+### Hyperlink
+```
+[百度](http://baidu.com)
+```
+[百度](http://baidu.com)
 
 ## Image
 
 ## Sequence Diagram
-
+youdao note provides this function.  
 ```
 sequenceDiagram
 A->>B: How are you?
