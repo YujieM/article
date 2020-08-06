@@ -105,9 +105,22 @@ printf("Hello world\n");
 ```
 
 ## Task List
+```
+- [] incomplete task 1
+- [] incomplete task 2
+- [x] complete task 1
+- [x] complete task 2
+```
 
 ## Link
 
 ## Image
 
 ## Sequence Diagram
+
+```
+sequenceDiagram
+A->>B: How are you?
+B->>A: Great!
+```
+
