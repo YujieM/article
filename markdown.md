@@ -25,33 +25,19 @@ Atx-style headers use 1-6 hash characters at the start of the line, correspondin
 ++Underline++  
 ==Backgroud highlight==
 
-
-```
-<font face="黑体">我是黑体字</font>
-<font face="微软雅黑">我是微软雅黑</font>
-<font face="STCAIYUN">我是华文彩云</font>
-<font color=#0099ff size=12 face="黑体">黑体</font>
-<font color=gray size=5>gray</font>
-<font color=#00ffff size=3>null</font>
-```
-<font face="黑体">我是黑体字</font>  
-<font face="微软雅黑">我是微软雅黑</font>  
-<font face="STCAIYUN">我是华文彩云</font>  
-<font color=#0099ff size=12 face="黑体">黑体</font>  
-<font color=gray size=5>gray</font>  
-<font color=#00ffff size=3>null</font>  
-
 ## List
 Markdown supports ordered (numbered) and unordered (bulleted) lists.  
 Unordered lists use asterisks, pluses, and hyphens — interchangably — as list markers:
 *   Red
 *   Green
 *   Blue  
+
 ```
 *   Red
 *   Green
 *   Blue
 ```
+
 is equivalent to:
 ```
 +   Red
@@ -72,11 +58,56 @@ Ordered lists use numbers followed by periods:
 ```
 
 ## Table
-
+第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。  
+列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。  
+第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。- 左对齐， :-: 中心对齐，-: 右对齐
+```
+|Name|Age|
+|-|-|
+|小明|5|
+|小红|20|
+|小陆|19|
+```
+|Name|Age|
+|-|-|
+|小明|5|
+|小红|20|
+|小陆|19|
 
 ## Align
+```
+<center>行中心对齐</center>
+<p align="left">行左对齐</p>
+<p align="right">行右对齐</p>
+```
+output:
+<center>行中心对齐</center>
+<p align="left">行左对齐</p>
+<p align="right">行右对齐</p>
+
+## Line break
+由于markdown编辑器的不同,可能在一行字后面，直接换行回车，也能实现换行，但是在Visual Studio Code上，想要换行必须得在一行字后面空两个格子才行。
 
 ## Code
+Use six `s to contain code.   
+input：
+```
+、、、
+include <stdio.h>
+int main(void)
+{
+printf("Hello world\n");
+}
+、、、
+```
+output：
+```
+include <stdio.h>
+int main(void)
+{
+printf("Hello world\n");
+}
+```
 
 ## Task List
 
