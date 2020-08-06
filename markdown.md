@@ -58,21 +58,16 @@ Ordered lists use numbers followed by periods:
 ```
 
 ## Table
-第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。  
-列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。  
-第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。- 左对齐， :-: 中心对齐，-: 右对齐
 ```
-|Name|Age|
-|-|-|
-|小明|5|
-|小红|20|
-|小陆|19|
+header 1 | header 2
+---|---
+row 1 col 1 | row 1 col 2
+row 2 col 1 | row 2 col 2
 ```
-|Name|Age|
-|-|-|
-|小明|5|
-|小红|20|
-|小陆|19|
+header 1 | header 2
+---|---
+row 1 col 1 | row 1 col 2
+row 2 col 1 | row 2 col 2
 
 ## Align
 ```
